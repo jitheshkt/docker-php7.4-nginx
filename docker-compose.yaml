@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  web:
+   image: nginx-php74:latest
+   container_name: nginx-php74
+   volumes:
+    - ./app:/var/www/html/
+   ports:
+    - 80:80
